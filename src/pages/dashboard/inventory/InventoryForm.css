@@ -1,0 +1,80 @@
+.inventory-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.inventory-form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.inventory-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* ---------- Stock Adjust modal ---------- */
+.stock-adjust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 4px 0 0;
+}
+
+.stock-adjust__current,
+.stock-adjust__projected {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.stock-adjust__current strong,
+.stock-adjust__projected strong {
+  color: var(--color-text-primary);
+}
+
+.stock-adjust__controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stock-adjust__btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color var(--transition-base), color var(--transition-base);
+}
+
+.stock-adjust__btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.stock-adjust__delta {
+  min-width: 48px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.stock-adjust__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 100%;
+  margin-top: 4px;
+}
