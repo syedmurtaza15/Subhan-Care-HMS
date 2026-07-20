@@ -73,7 +73,6 @@ src/
 - **Testing & QA** — comprehensive testing across all flows, browsers, and device sizes.
 - **Bug Fixes** — resolved edge cases, improved error handling, and optimized performance.
 
-Screenshots for all sprint waves (26+ screens) are available in `screenshots/`.
 
 ## Demo credentials
 
